@@ -7,12 +7,10 @@ var MainView = Backbone.View.extend({
 		$('.jumbotron').html(this.el);
 
 		this.render();
-
 	},
 
 	render: function(){
 		var renderedTemplate = this.createTemplate(this.model.attributes)
-
 		this.$el.html(renderedTemplate)
 
 	}
